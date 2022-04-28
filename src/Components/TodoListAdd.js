@@ -23,7 +23,7 @@ const TodoListAdd = ({addList}) => {
 
     return (
         <TodoAdd onSubmit={onSubmit}>
-            { open && <InputBox >
+            { open && <InputBox>
                 <input type="text" onChange={onChange} value={inputText}></input>
             </InputBox>}
             <TodoAddBtn onClick={()=>setOpen(!open)} open={open}></TodoAddBtn>
