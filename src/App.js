@@ -26,13 +26,13 @@ const App = () => {
       check : false
     }
     setTodoList(todoList.concat(newList))
-    nextId.current+= 1;
+    nextId.current+= 1
   }, [todoList])
 
   // 할일 삭제하는 기능
   // setTodoList에 todoList중 현재 id와 요소의 id가 같은지 각각 확인 후 같지 않은 것만 들어간다.  
   const onRemove = useCallback(id => {
-      setTodoList(todoList.filter((todo) => todo.id !== id));
+      setTodoList(todoList.filter((todo) => todo.id !== id))
     },[todoList]
   );
 
